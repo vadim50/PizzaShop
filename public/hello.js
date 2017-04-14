@@ -1,4 +1,8 @@
 
+function add_to_cart()
+{
+	alert('Hello 5!');
+}
 function someThing()
 	{
 		var x = window.localStorage.getItem('s');
@@ -8,3 +12,7 @@ function someThing()
 		alert(x);
 	
 	}
+
+
+
+
