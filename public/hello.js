@@ -1,7 +1,7 @@
 
-function add_to_cart()
+function add_to_cart(id)
 {
-	alert('Hello 5!');
+	alert('You added pizza with id: ' + id);
 }
 function someThing()
 	{
