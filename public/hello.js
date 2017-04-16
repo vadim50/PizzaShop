@@ -8,18 +8,9 @@ function add_to_cart(id)
 	window.localStorage.setItem(key, x);
 
 	update_orders_input();
+	update_orders_button();
 }
 
-
-function someThing()
-	{
-		var x = window.localStorage.getItem('s');
-		x = x * 1 + 1;
-		window.localStorage.setItem('s', x);
-
-		alert(x);
-	
-	}
 
 function cart_get()
 {
@@ -58,5 +49,10 @@ function update_orders_input()
 	var orders = cart_get_orders();
 	$('#orders_input').val(orders);
 
+}
+function update_orders_button()
+{
+	var text = 'Cart (' + cart_get() + ')';
+	$('#orders_button').val(text);
 }
 
