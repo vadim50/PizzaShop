@@ -55,4 +55,9 @@ function update_orders_button()
 	var text = 'Cart (' + cart_get() + ')';
 	$('#orders_button').val(text);
 }
+function cancel_order()
+{
+	alert("aaa");
+	return false;
+}
 
